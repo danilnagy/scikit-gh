@@ -14,7 +14,7 @@ else:
 	# load data path from args
 	data_path = sys.argv[-1]
 
-
+# DESERIALIZE TEXT TO DATA
 with open(data_path, 'rb') as f:
 	data_in = pickle.load(f, encoding='latin1')
 	data = json.loads(data_in)
@@ -44,7 +44,7 @@ print(data_out)
 
 
 ### DATA OUTPUT
-
+### SERIALIZE NEW DATA BACK TO TEXT
 output_path = "\\".join(data_path.split("\\")[:-1] + ["script_output.d"])
 
 with open(output_path, 'wb') as f:
