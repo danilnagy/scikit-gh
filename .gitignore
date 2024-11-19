@@ -1,0 +1,5 @@
+env/
+_temp/
+*.ini
+*.3dmbak
+*.rhl
